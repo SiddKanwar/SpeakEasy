@@ -1,0 +1,7 @@
+# ninja log v5
+1	2091	0	CMakeFiles/echo.dir/audio_common.cpp.o	2dcfbaa4c11f8852
+12	2097	0	CMakeFiles/echo.dir/audio_main.cpp.o	6cd91b9efc572e06
+4	2103	0	CMakeFiles/echo.dir/audio_player.cpp.o	1d0af94c4948a091
+7	2129	0	CMakeFiles/echo.dir/audio_recorder.cpp.o	35449dd48ef7374c
+10	2633	0	CMakeFiles/echo.dir/debug_utils.cpp.o	a1af6643fb8747a7
+2634	3040	0	C:/Users/RakhiPC/AndroidStudioProjects/audio-echo/app/build/intermediates/cmake/debug/obj/x86_64/libecho.so	29e57b29f4549e26

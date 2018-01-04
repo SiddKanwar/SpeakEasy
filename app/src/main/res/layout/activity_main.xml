@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:backgroundTint="@android:color/background_dark"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button_start_capture"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="87dp"
+        android:text="@string/StartEcho"
+        android:onClick="startEcho" />
+    <Button
+        android:id="@+id/button_stop_capture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="38dp"
+        android:layout_marginEnd="38dp"
+        android:text="@string/StopEcho"
+        android:onClick="stopEcho"
+        android:layout_alignBaseline="@+id/button_start_capture"
+        android:layout_alignBottom="@+id/button_start_capture"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/GetParam"
+        android:id="@+id/get_parameter_button"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/statusView"
+        android:onClick="getLowLatencyParameters" />
+    <TextView android:text="@string/init_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="3"
+        android:id="@+id/statusView"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/get_parameter_button"
+        android:layout_alignStart="@+id/button_start_capture"
+        android:layout_marginBottom="90dp"
+        android:id="@+id/vol_slider"
+        android:layout_alignEnd="@+id/button_stop_capture" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/get_parameter_button"
+        android:layout_alignStart="@+id/vol_slider"
+        android:layout_marginBottom="28dp"
+        android:id="@+id/delay_slider"
+        android:layout_alignEnd="@+id/vol_slider" />
+
+    <TextView
+        android:text="Volume:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_above="@+id/vol_slider"
+        android:layout_alignStart="@+id/vol_slider"
+        android:layout_marginBottom="11dp" />
+
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ff1b76"
+        android:textStyle="bold"
+        android:text="Speak Easy!"
+        android:textSize="50dp"
+        android:id="@+id/title"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:text="Delay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_above="@+id/delay_slider"
+        android:layout_alignStart="@+id/delay_slider"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/vol_text"
+        android:layout_marginRight="19dp"
+        android:layout_marginEnd="15dp"
+        android:layout_above="@+id/vol_slider"
+        android:layout_alignEnd="@+id/vol_slider" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/delay_text"
+        android:layout_marginRight="19dp"
+        android:layout_above="@+id/delay_slider"
+        android:layout_alignStart="@+id/vol_text" />
+
+</RelativeLayout>
+
